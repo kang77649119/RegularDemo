@@ -20,7 +20,8 @@ class ViewController: UIViewController {
             
             let qqStr = self.qqText.text!
             
-            // 正则表达式
+            // 正则表达式 [1-9]第一位数字为1-9 [0-9]其他数字为0-9 {4,14}4-14这个区间
+            // 下面的正则表达式想要筛选出 第一个字符为1-9范围内的数字,从5-14这个范围的数字为1-9
             let pattern = "[1-9][0-9]{4,14}"
             
             // 正则对象
